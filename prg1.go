@@ -9,7 +9,9 @@ func main (){
 	fmt.Println(x*y)
 
 }
+// global declartion of variable
 var a,b int
+// delcare local variable 
 func cla(int, int){
 
 	fmt.Println(a*b)
