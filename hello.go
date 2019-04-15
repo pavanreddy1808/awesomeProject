@@ -1,12 +1,16 @@
 package main
 import "fmt"
-import "math"
+
 func main (){
 	fmt.Println("hello ")
+	a :=4
+	b :=5
+	calc(a,b)
 }
-func calc(x,y){ x 
-	z=math.sum(x+y)
-	fmt.println(z)
+func calc(int,int){
+
+	z := x+y
+	fmt.Println(z)
 }
 
 func calc2(){
