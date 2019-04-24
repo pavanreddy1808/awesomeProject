@@ -3,6 +3,8 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"os"
+	"sort"
 )
 
 type person struct {
@@ -46,4 +48,22 @@ func main(){
 		fmt.Println(err)
 	}
 	fmt.Println(unjsperson)
+
+	//encoding go objects
+	err = json.NewEncoder(os.Stdout).Encode(user)
+	if err!=nil{
+		fmt.Println(err)
+	}
+	//fmt.Println(user)
+
+	//sorting
+	s:=[]string{"pavan","reddy","Navya","pabbathi"}
+	i:=[]int{2,4,7,2,4,6,8,1}
+	fmt.Println(s)
+	fmt.Println(i)
+	//after sort
+	sort.Strings(s)
+	sort.Ints(i)
+	fmt.Println(i)
+	fmt.Println(s)
 }
